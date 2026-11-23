@@ -1,4 +1,5 @@
 /* we need to import a font here */
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
 * {
     margin: 0;
@@ -34,4 +35,74 @@ body {
     /* defautl website bg and text color,  */
     background-color: var(--blue-dark);
     color: var(--text-black);
+
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.main-content {
+    flex: 1;
+}
+
+.main-header {
+    background-color: var(--cream);
+    margin: 32px;
+    padding: 32px;
+    border-radius: 32px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    height: 100px;
+}
+
+.header-nav {
+    display: flex;
+    gap: 32px;
+
+}
+
+.nav-link {
+    color: var(--text-black);
+    font-weight: 800;
+    text-decoration: none;
+    font-size: 1.5rem;
+
+    &.active,
+    &:hover {
+        text-decoration: underline;
+        text-decoration-thickness: 8px;
+    }
+}
+
+.logo {
+    margin-top: 100px;
+}
+
+.test {
+    border: 2px solid red;
+}
+
+
+/* How things change below 900px screen size */
+@media only screen and (max-width: 900px){
+    .main-header{
+        flex-direction: column-reverse;
+        height: 100px;
+        justify-content: flex-start;
+    }
+    .header-nav{
+        gap: 8px
+    }
+    .nav-link{
+        font-size: 1.25rem;
+    }
+    .logo{
+        width: 100px;
+        margin-top: 0px;
+    }
+
 }
