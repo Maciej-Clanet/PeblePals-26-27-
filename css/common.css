@@ -1,0 +1,37 @@
+/* we need to import a font here */
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    /* VARIABLES */
+    /*Colors*/
+    --cream: #E2E0C7;
+    --text-black: #030303;
+    --text-white: #FFFFFF;
+    --yellow: #FBD725;
+    --blue-light: #90B7BF;
+    --blue-dark: #67A1BC;
+    --red: #9F2123;
+
+    /*Shadows*/
+    --card-shadow: 0px 16px 64px 0px rgba(0, 0, 0, 0.25);
+    --card-blue-shadow: 0px 32px 50px 0px rgba(6, 63, 86, 0.5);
+    --text-shadow: 0px 4px 8px rgba(6, 63, 86, 0.5);
+
+    /* gradients*/
+    --sky-gradient: linear-gradient(180deg, rgba(103, 161, 188, 1) 0%, rgba(143, 183, 191, 1) 100%);
+
+    /* font stuff*/
+    /* it will default to sans-serif until we import the inter font */
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+
+    /* defautl website bg and text color,  */
+    background-color: var(--blue-dark);
+    color: var(--text-black);
+}
