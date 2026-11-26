@@ -1,0 +1,148 @@
+.home-banner{
+    background-image: url("../assets/Banner_image.png");
+    background-repeat: no-repeat;
+    height: 480px;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: flex-end;
+    padding: 32px;
+
+    h1{
+        color: var(--text-white);
+        font-size: 3rem;
+        text-shadow: var(--text-shadow);
+        
+    }
+
+}
+
+.banner-content{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+
+
+.testimonials-bar{
+    background-color: var(--yellow);
+    border-bottom: 1px solid var(--text-black);
+
+    display: flex;
+    justify-content: center;
+    gap: 32px;
+    padding: 8px;
+}
+
+.review-item{
+    color: var(--text-white);
+    background-color: var(--text-black);
+    border: 2px solid var(--red);
+    border-radius: 4px;
+
+    display: flex;
+    align-items: center;
+    gap: 4px;
+
+    padding-right: 4px;
+    
+    > .score{
+        background-color: var(--yellow);
+        color: var(--red);
+        border-radius: 0px 16px 16px 0px;
+        padding: 4px;
+    }
+
+    > .author{
+        font-size: 12px;
+    }
+}
+
+.home-info{
+
+    background-color: var(--yellow);
+    padding: 64px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    /* mini task: make the bottom corners round 
+    like in the design
+     */
+     border-radius:  0px 0px 128px 128px;
+}
+
+
+.info-grid{
+
+    display: grid;
+    gap: 16px;
+    
+    width: 100%;
+    max-width: 800px;
+
+    grid-template-columns: 1fr  1fr;
+
+
+    > .info-box{
+
+        border: 2px solid var(--text-black);
+        padding: 16px;
+        border-radius: 4px;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 8px;
+
+
+
+        > h3{
+            border-bottom: 2px solid var(--text-black);
+        }
+
+    }
+
+    > .info-box.wide{
+        grid-column: span 2;
+    }
+}
+
+
+.info-bullet{
+    display: flex;
+    align-items: center;
+
+    width: 100%;
+
+
+    > .nr{
+        border: 1px solid var(--text-black);
+        padding: 4px;
+        width: 32px;
+
+        text-align: center;
+
+        border-radius: 32px 0px 0px 32px;
+    }
+    > p{
+        border: 1px solid var(--text-black);
+        padding: 4px;
+
+        border-radius: 0px 4px 4px 0px;
+        width: 100%;
+    }
+}
+
+
+@media only screen and (max-width: 900px){
+
+    .home-banner{
+        align-items: center;
+    }
+
+}
